@@ -7,10 +7,10 @@ eureka:
     service-url:
       default-zone: http://localhost:8761/eureka
     instance:
-      hostname: localhost
+      hostname: archlinux
 
 spring:
-  cloud: 
+  cloud:
     gateway:
       discovery:
         locator:
@@ -18,13 +18,13 @@ spring:
       routes:
         - id: usuario-service
           uri: lb://usuario-service
-          predicates: 
+          predicates:
             - Path=/usuario/**
         - id: carro-service
           uri: lb://carro-service
-          predicates: 
+          predicates:
             - Path=/carro/**
         - id: moto-service
           uri: lb://moto-service
-          predicates: 
+          predicates:
             - Path=/moto/**
