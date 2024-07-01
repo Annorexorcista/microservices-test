@@ -13,7 +13,6 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>config-service</name>
 	<description>Demo project for Spring Boot</description>
-	<url>https://github.com/Annorexorcista/microservices-test</url>
 	<licenses>
 		<license/>
 	</licenses>
@@ -27,7 +26,7 @@
 		<url/>
 	</scm>
 	<properties>
-		<java.version>17</java.version>
+		<java.version>1.8</java.version>
 		<spring-cloud.version>2020.0.3</spring-cloud.version>
 	</properties>
 	<dependencies>
